@@ -71,7 +71,7 @@ nav > a:hover {
     text-decoration: underline;
     transition-duration: 0.5;
 }
-
+/*
 main{
     min-width: 300px;
     max-width: 1000px;
@@ -91,6 +91,8 @@ main p {
     text-indent: 30px;
     font-size: 1em;
 }
+
+*/
 h2 {
     text-align: center;
     color: #164773;
@@ -99,6 +101,121 @@ h2 {
 h4 {
     
     font-size: 21px;
+}
+
+.sobre-politica {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 24px 0 24px;
+}
+
+
+
+.politica-saiba-mais {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 0px 0px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    background-color: #205CB1;
+}
+
+.container-saiba-mais {
+    margin: 25px;
+    flex-wrap: initial;
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: auto;
+    
+}
+
+.widget-saiba-mais{
+    position: relative;
+    justify-content: baseline;
+    display: flex;
+    width: 50%;
+}
+
+.text-saiba-mais {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    --container-widget-width: 100%;
+    --container-widget-height: initial;
+    --container-widget-flex-grow: 0;
+    --container-widget-align-self: initial;
+}
+
+.text-saiba-mais h2 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 46px;
+    font-family: "Poppins", sans-serif;
+}
+.text-saiba-mais p {
+    font-family: "Poppins", sans-serif;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-saiba-mais .foto-saiba-mais {
+    max-width: 100%;
+    margin-block-end: 0;
+}
+
+
+.foto-saiba-mais {
+    width: 10%;
+    height: 50%;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.politica-qualidade {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+
+}
+
+.card-politica-qualidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 320px;
+    background: #F3F4F6;
+    border-radius: 16px;
+    padding: 24px;
+
+    max-width: 100%;
+    word-wrap: break-word;
+    width: 305px;
+    text-align: center;
 }
 
 .map {
@@ -242,7 +359,19 @@ footer h2 {
         margin-bottom: 16.21%;
     }
     .footer-widget {
-        width: 46.25% !important;
+        width: 61.25% !important;
         margin: 0 7.5% 7.5% 0 !important;
+    }
+    .politica-saiba-mais {
+        padding-block-start: 40px;
+        padding-block-end: 40px;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+    }
+    .widget-saiba-mais {
+        width: 100%;
+        flex-wrap: wrap;
+
+        flex-direction: column;
     }
 }
