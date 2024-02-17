@@ -157,6 +157,8 @@ main img {
 
 
 div.video > iframe {
+    width: 560px ;
+    height: 315px;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -165,7 +167,7 @@ div.video > iframe {
 }
 
 @media screen and (max-width: 768px) {
-    .video{
+    .video > iframe{
         height: 350px;
         width: 350px;
         margin: auto;
