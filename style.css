@@ -157,6 +157,7 @@ main img {
 
 
 div.video > iframe {
+    margin: auto;
     width: 560px ;
     height: 315px;
     position: absolute;
