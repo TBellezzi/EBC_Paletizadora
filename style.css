@@ -155,12 +155,22 @@ main img {
     position: relative;
 }
 
+
 div.video > iframe {
     position: absolute;
     top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .video{
+        height: 350px;
+        width: 350px;
+        margin: auto;
+    }
+    
 }
 
 #sobre {
