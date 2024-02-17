@@ -7,7 +7,7 @@
 }
 
 *{
-    
+    font-size: 100%;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -15,63 +15,72 @@
 
 body {
     font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+nav, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9; 
+}
+a:hover {
+    opacity: 1;
+}
+/*HEADER*/
 
-    
+header, .nav_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 header {
-    width: 100%;
-    background-color: #162A73;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+    background-color: #164773;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.249);
+    height: 3.5em;
+    justify-content: space-between;
+    padding: 20px 50px;
 }
 
-.logo-imagem{
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 25px;
+.logo_header{
+    width: 45px;
 }
-.container-logo {
-    color: white;
-    display: flex;
-    align-items: center;
-    
+.logo_txt {
+    color: #ffff;
 }
 
-.logo-texto{
-    margin-left: 20px;
+.nav_header {
+    gap: 3em;
 }
 
-nav {
-    display: inline-block;
-    padding: 10px;
-    
-}
-
-nav > a {
-    font-size: 20px;
-    color: white;
-    margin: 0px 10px;
-    font-weight: bold;
-    border-radius: 5px;
+.nav_header a {
     text-decoration: none;
-    padding: 10px
+    color: #ffffff;
+    transition: 1s;
+    font-weight: bold;
 }
 
-nav > a:hover {
-    background-color:#0B2B40;
-    
-    border-radius: 5px;
-    text-decoration: underline;
-    transition-duration: 0.5;
+.active {
+    background-color: #205cb14b;
+    padding: 10px;
+    border-radius: 10px;
 }
-/*
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 95px;
+
+    }
+    .logo_txt {
+        margin-bottom: 25px;
+    }
+    
+}
+
 main{
     min-width: 300px;
     max-width: 1000px;
@@ -81,9 +90,16 @@ main{
     padding: 20px;
     background-color: white;
 }
-main h1{
+main h2{
     text-align: center;
-    color: white;
+    color: #151515;
+    font-size: 24px;
+}
+
+main h3{
+    color: #151515;
+    font-size: 16px;
+    text-align: center;
 }
 main p {
     margin: 15px 0px;
@@ -92,58 +108,112 @@ main p {
     font-size: 1em;
 }
 
-*/
-h2 {
-    text-align: center;
-    color: #164773;
-}
-
-h4 {
-    
-    font-size: 21px;
-}
-#saibaMais {
-    background-color: #205cb1;
-}
-
-.text-politica {
-    background-color: #fff;
-}
-
-.container-saiba {
-
-    position: relative;
+main img {
+    width: 450px;
+    height: 450px;
+    display: block;
     margin: auto;
-    display: flex;
-
-    width: 100%;
- 
-    position: relative;
-
 }
 
-#widgets-saiba {
+#servico {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.box-img-main {
+    margin: auto;
+}
+
+.img-main {
+    margin-bottom: 30px;
+}
+
+.txt-img-main {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main img{
+        height: 350px;
+        width: 350px;
+        margin: auto;
+    }
+    
+}
+/*
+.Container-saiba {
+    background-color: #205cb1;
+    background-image: url(img/fundo_saiba.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-widgets-saiba {
+    flex-wrap: wrap;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: auto;
+
+    gap: 0px 0px;
+    width: 100%;
+    margin: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    height: 100%;
+}
+
+.widgets-saiba {
     display: flex;
+    flex-direction: column;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-
-
+    width: 100%;
+    height: initial;
+    flex-grow: 0;
+    align-self: initial;
+    flex: 0 1 auto;
 }
 .widget-saiba {
-    color: white;
-    text-align: justify;
-    width: 48%;
-
-}
-
-.title-saiba {
-    color: white;
-    font-size: 46px;
+    max-width: 100%;
     text-align: left;
+    color: #fff;
+    min-width: 0;
+    margin-bottom: 20px;
 }
+.widget-saiba-img {
+    text-align: center;
+}
+.widget-saiba-txt {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+*/
+
+#sobre {
+    margin: 100px 0px;
+
+}
+
+.saiba-maquina {
+    background: #F3F4F6;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+}
+
+.saiba-maquina h4{
+    font-size: 21px;
+}
+
 .politica-qualidade {
     max-width: 1200px;
     margin: 40px auto;
@@ -189,10 +259,17 @@ h4 {
     background-repeat: no-repeat;
 }
 
+/*footer*/
+
+
 
 .h2-footer {
     text-align: center;
     font-weight: bolder;
+    font-size: 24px;
+    padding-top: 15px;
+    color: #164773;
+    
 }
 
 .foto-container {
@@ -248,8 +325,17 @@ h4 {
     float: left;
     color: #fff;
     margin: 25px;
+    
 }
 
+.footer-widget p {
+    padding: 5px;
+}
+
+.footer-widget p a {
+    text-decoration: none;
+    color: #fff;
+}
 .fwidger {
     
     float: left;
@@ -276,7 +362,6 @@ ul, li {
     color: white;
     background-color: #222222;
     display: flex;
-    
 }
 
 #footer-bottom {
@@ -291,11 +376,11 @@ footer h2 {
 
 .whats {
     animation: whats 2.5 cubic-bezier(0.550,0.085,0.680,0.530) both;
-    float: left;
+    float: right;
     position: fixed!important;
     bottom: 25px;
     z-index: 99999;
-    left: 30px;
+    right: 30px;
 }
 
 .timeHover {
@@ -303,6 +388,11 @@ footer h2 {
 }
 
 @media screen and (max-width: 980px){
+
+    .h2-footer {
+        margin-bottom: 3em;
+    }
+
     .container {
         -webkit-transition: none;
         transition: none;
@@ -315,8 +405,9 @@ footer h2 {
         margin-bottom: 16.21%;
     }
     .footer-widget {
-        width: 61.25% !important;
+        width: 62.25% !important;
         margin: 0 7.5% 7.5% 0 !important;
+        margin-bottom: 15px;
     }
     .politica-saiba-mais {
         padding-block-start: 40px;
@@ -324,10 +415,20 @@ footer h2 {
         padding-inline-start: 10px;
         padding-inline-end: 10px;
     }
-    .widget-saiba-mais {
+
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .widgets-saiba {
         width: 100%;
         flex-wrap: wrap;
-
-        flex-direction: column;
     }
+    .title-saiba {
+        text-align: center;
+    }
+    
 }
